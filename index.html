@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <script src="angular.min.js"></script>
+        <script src="app.js"></script>
         <title>SPA SITES</title>
-        <body>
-            <h1>
-                This is my workspace.
-            </h1>
-            <script id="__bs_script__">//<![CDATA[
-                document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.27.5'><\/script>".replace("HOST", location.hostname));
-            //]]></script>
-        </body>
+       <body ng-app="SpaApp">
+          <h1> Name Calculator </h1>
+                <div>
+                  <div ng-controller="SpaAppController">
+                      Your name:
+                      <input type="text" ng-model="name" ng-keyup="displaynumeric();">
+                   </div>
+                    <div> Total Numeric value of persons name is:
+                       {{totalvalue}}
+                    </div>
+               </div>
+     </body>
     </head>
 </html>
