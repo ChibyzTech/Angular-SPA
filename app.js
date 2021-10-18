@@ -1,10 +1,10 @@
 (function (){
-'use strict';
-
-    angular.module('SpaApp', [])
-    .controller('SpaAppController',function($scope){
+"use strict";
+angular.module("SpaApp", [])
+    .controller("SpaAppController",function($scope){
       $scope.name="";
       $scope.totalvalue="0";
+      
       $scope.displaynumeric=function(){
           var totalnamevalue = CalcNumericString($scope.name);//get the total value
           $scope.totalvalue = totalnamevalue;

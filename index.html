@@ -6,16 +6,19 @@
         <script src="app.js"></script>
         <title>SPA SITES</title>
        <body ng-app="SpaApp">
-          <h1> Name Calculator </h1>
-                <div>
-                  <div ng-controller="SpaAppController">
-                      Your name:
-                      <input type="text" ng-model="name" ng-keyup="displaynumeric();">
-                   </div>
-                    <div> Total Numeric value of persons name is:
-                       {{totalvalue}}
-                    </div>
-               </div>
-     </body>
+          <div>
+               <div ng-controller="SpaAppController">
+                   <h1> This calculator calculates your name totalsum equivalent to Unicode character </h1>
+                    Type your name here:
+
+                  <input type="text" ng-model="name" ng-keyup="displaynumeric();">
+                 <div> Total Unicode value of person's name is:
+                       {{totalvalue}} 
+                       {{name}}
+                 </div>
+              </div>
+           </div>
+           
+        </body>
     </head>
 </html>
